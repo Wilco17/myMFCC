@@ -5,11 +5,12 @@ Mel Frequency Cepstral Coefficient computation in C++
 
 # DESCRIPTION
 
-This C++ software computes MFCC from a vector signal.
+This C++ software computes MFCCs of a non segmented vector signal. Segmentation should be previouslly applied.
 
 This software uses OMP. You can deactivate OMP by commenting line #59 in /include/myFCC.h
 
 DCT computation is not optimized, although it might not be necessary for only a few MFCC coefficients. Contributions in this aspect would be nicely received
+
 
 Workflow:
 
@@ -59,9 +60,9 @@ Workflow:
 	
 	Where:
 	
-		signal:					vector of source signal
+		signal:				vector of source signal
 		
-		coefs:					pointer to vector of coefficients
+		coefs:				pointer to vector of coefficients
 		
 EXAMPLE INCLUDED IN /example FOLDER 
 
