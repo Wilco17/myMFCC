@@ -61,9 +61,7 @@ myFCC::myFCC(size_t numMel, size_t numMFCC, double* freqRange, double Alpha, vec
       alpha             =   Alpha;
       liftParam         =   liftparam;
       Fs                =   fs;
-      procSignal.resize(signalL);
-      for  (size_t n=0;n<signalL ;n++)
-          procSignal[0] = 0.0;
+      procSignal.resize(signalL,0.0);
       /** Resizing matrixes **/
       melFilterBank.resize(numMelComponents);
       for(size_t i=0;i<numMelComponents;i++)
