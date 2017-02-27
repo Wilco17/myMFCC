@@ -1,37 +1,7 @@
 # myMFCC
 Mel Frequency Cepstral Coefficient computation in C++
 
-[COPYRIGHT]
 
-myFCC:
-Copyright (c) 2017 - Ignacio Jáuregui Novo
-Multimedia Technologies Group. University of Vigo, Spain
-email: ignaciojauregui@gts.uvigo.es
- 
-This software is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
- 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
- 
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-FFTW:
-FFTW is copyright © 1997--1999 Massachusetts Institute of Technology.
-Copyright (c) 2003, 2007-14 Matteo Frigo
-Copyright (c) 2003, 2007-14 Massachusetts Institute of Technology
-
-The following statement of license applies *only* to this header file,
-and *not* to the other files distributed with FFTW or derived therefrom:
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions
-are met:
 
 # DESCRIPTION
 
@@ -108,3 +78,37 @@ THIS SOFTWARE USES FFTW FOR FFT COMPUTATION SO YOU HAVE TO INSTALL IT. http://ww
 # ISSUES
 
 You can report any issue, commentary or contribution to jaureguinovo@gmail.com or ignaciojauregui@gts.uvigo.es
+
+# COPYRIGHT
+
+myFCC:
+
+Copyright (c) 2017 - Ignacio Jáuregui Novo
+Multimedia Technologies Group. University of Vigo, Spain
+email: ignaciojauregui@gts.uvigo.es
+ 
+This software is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+ 
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+ 
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+FFTW:
+
+FFTW is copyright © 1997--1999 Massachusetts Institute of Technology.
+Copyright (c) 2003, 2007-14 Matteo Frigo
+Copyright (c) 2003, 2007-14 Massachusetts Institute of Technology
+
+The following statement of license applies *only* to this header file,
+and *not* to the other files distributed with FFTW or derived therefrom:
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
