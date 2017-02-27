@@ -57,6 +57,7 @@ Workflow:
 
 
 [USAGE]
+
 1 - Create myFCC object: myFCC(size_t numMel, size_t numMFCC, double* freqRange, double alpha, vector<double> signal,double fs, double liftparam);
 
 	Example:
@@ -78,6 +79,7 @@ Workflow:
 		samplingFreq:			Sampling frequency
 		
 		liftCoef:			Sinusoidal lifting coefficient 
+		
 		
 2- Get MFCC from myFCC-object method getMFCC:     void  getMFCC(vector<double> signal, vector<double>& mffcCoefs)
 
