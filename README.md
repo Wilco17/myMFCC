@@ -2,6 +2,7 @@
 Mel Frequency Cepstral Coefficient computation in C++
 
 [COPYRIGHT]
+
 myFCC:
 Copyright (c) 2017 - Ignacio Jáuregui Novo
 Multimedia Technologies Group. University of Vigo, Spain
@@ -35,45 +36,73 @@ are met:
 [DESCRIPTION]
 
 This C++ software computes MFCC from a vector signal.
+
 This software uses OMP. You can deactivate OMP by commenting line #59 in /include/myFCC.h
+
 DCT computation is not optimized, although it might not be necessary for only a few MFCC coefficients. Contributions in this aspect would be nicely received
 
 Workflow:
+
 1- First order pre-emphasis and Hamming windowing
+
 2- PSD computation
+
 3- MEL triangular filter bank application to PSD
+
 4- LOG of MEL filtered PSD
+
 5- DCT decorrelation of Log-MEL filtered PSD
+
 6- LIFTERING (sinusoidal) of MFCC coefficients
+
 
 [USAGE]
 1 - Create myFCC object: myFCC(size_t numMel, size_t numMFCC, double* freqRange, double alpha, vector<double> signal,double fs, double liftparam);
+
 	Example:
+	
 	myFCC superMFCC(numFilterBanks,numMFCC,freqRange,preEmphasisCoef,signal,samplingFreq,liftCoef);	
+	
 	Where:
+	
 		numFilterBanks: 		number of MEL filter banks applied to FFT
-		numMFCC:				number of MFFC coefficients
-		freqRange:				Frequency range of computation in Hertz.
-		preEmphasisCoef:		1st. order FIR filter tap for pre-emphasis  (preSignal[i] = signal[i] - preEmphasisCoef*signal[i-1])
-		signal:					vector of source signal
-		samplingFreq:			Sampling frequency
-		liftCoef:				Sinusoidal lifting coefficient 
 		
-2- Get MFCC from myFCC-object method getMFCC:     void  getMFCC(vector<double> signal, vector<double>& mffcCoefs);
+		numMFCC:			number of MFFC coefficients
+		
+		freqRange:		        Frequency range of computation in Hertz.
+		
+		preEmphasisCoef:		1st. order FIR filter tap for pre-emphasis  
+		
+		signal:				vector of source signal
+		
+		samplingFreq:			Sampling frequency
+		
+		liftCoef:			Sinusoidal lifting coefficient 
+		
+2- Get MFCC from myFCC-object method getMFCC:     void  getMFCC(vector<double> signal, vector<double>& mffcCoefs)
+
 	Example:
+	
 	superMFCC.getMFCC(signal,coefs);
+	
 	Where:
+	
 		signal:					vector of source signal
+		
 		coefs:					pointer to vector of coefficients
 		
 EXAMPLE INCLUDED IN /example FOLDER 
 
 [ISNTALLATION]
+
 This software is cross-platform.
+
 Add /include/myFCC.h and myFCC.cpp to your project and link properly.
 
 IMPORTANT:
+
 THIS SOFTWARE USES FFTW FOR FFT COMPUTATION SO YOU HAVE TO INSTALL IT. http://www.fftw.org/
 
 [ISSUES]
+
 You can report any issue, commentary or contribution to jaureguinovo@gmail.com or ignaciojauregui@gts.uvigo.es
