@@ -33,7 +33,7 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions
 are met:
 
-[DESCRIPTION]
+# DESCRIPTION
 
 This C++ software computes MFCC from a vector signal.
 
@@ -56,7 +56,7 @@ Workflow:
 6- LIFTERING (sinusoidal) of MFCC coefficients
 
 
-[USAGE]
+# USAGE
 
 1 - Create myFCC object: myFCC(size_t numMel, size_t numMFCC, double* freqRange, double alpha, vector<double> signal,double fs, double liftparam);
 
@@ -95,7 +95,7 @@ Workflow:
 		
 EXAMPLE INCLUDED IN /example FOLDER 
 
-[ISNTALLATION]
+# ISNTALLATION
 
 This software is cross-platform.
 
@@ -105,6 +105,6 @@ IMPORTANT:
 
 THIS SOFTWARE USES FFTW FOR FFT COMPUTATION SO YOU HAVE TO INSTALL IT. http://www.fftw.org/
 
-[ISSUES]
+# ISSUES
 
 You can report any issue, commentary or contribution to jaureguinovo@gmail.com or ignaciojauregui@gts.uvigo.es
